@@ -2,27 +2,44 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="HTML5, CSS3, JavaScript">
-    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
     <link rel="stylesheet" href="Estilo_index.css">
 </head>
 <body>
-    <div class="Barra-superior"></div>
 
-    <div class="Formulario">
-        <h1>Inicia Sesión</h1>
-        <form method="post">
-            <div class="Usuario">
-                <input type="text" required>
-                <label>Nombre de usuario</label>
+    <div class="contenedor-principal">
+        <div class="imagen-login">
+            <img src="./Multimedia/Escudo.png" alt="Imagen decorativa">
+        </div>
+        <div class="Titulo-formulario">
+        </div>       
+        
+        <div class="contenedor-formulario">
+            <div class="formulario-login">
+        <div class="imagen-login2">
+            <img src="./Multimedia/Escudo.png" alt="Imagen decorativa">
+        </div>
+                <h1>Iniciar Sesión</h1>
+                <form method="post">
+                    <div class="campo-formulario">
+                        <label>CORREO ELECTRÓNICO</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label>CONTRASEÑA</label>
+                        <input type="password" required>
+                    </div>
+                    <button type="submit" class="boton-login">INICIAR SESIÓN</button>
+                </form>
+                <div class="enlace-admin">
+                    <a href="./Vista/Inicio_Admin">¿Eres admnistrador?</a>
+                    <a href="probar.php">Prueba</a>
+
+
+                </div>
             </div>
-            <div class="Contrasena">
-                <input type="password" required>
-                <label>Contraseña</label>
-            </div>
-            <input type="submit" value="Iniciar">
-        </form>
+        </div>
     </div>
-    <div class="Barra-inferior"></div>
 </body>
 </html>
